@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>MTC - Morrocan Traveling Calculator</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/fontawesome-all.css" rel="stylesheet">
+    <link href="static/css/swiper.css" rel="stylesheet">
+	<link href="static/css/magnific-popup.css" rel="stylesheet">
+	<link href="static/css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="static/images/favicon.png">
+    <style>
+        input[type=checkbox] {
+            display:none;
+        }
+
+        input[type=checkbox] + label {
+            display:inline-block;
+            padding: 0 0 0 0px;
+            background:url("static/images/NotSelected.png") no-repeat;
+            height: 65px;
+            /*width: 125px;;*/
+            background-size: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-weight: 800;
+        }
+
+        input[type=checkbox]:checked + label {
+            background:url("static/images/Selected.png") no-repeat;
+            height: 65px;
+            /*width: 125px;*/
+            display:inline-block;
+            background-size: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-weight: 800;
+        }
+    </style>
+    <script>
+        function submit() {
+            listeCities = [];
+            if(document.getElementById('Agadir').checked)
+                listeCities.push(document.getElementById('Agadir').name);
+            if(document.getElementById('AlHoceima').checked)
+                listeCities.push(document.getElementById('AlHoceima').name);
+            if(document.getElementById('BeniMellal').checked)
+                listeCities.push(document.getElementById('BeniMellal').name);
+            if(document.getElementById('Casablanca').checked)
+                listeCities.push(document.getElementById('Casablanca').name);
+            if(document.getElementById('Dakhla').checked)
+                listeCities.push(document.getElementById('Dakhla').name);
+            if(document.getElementById('ElJadida').checked)
+                listeCities.push(document.getElementById('ElJadida').name);
+            if(document.getElementById('Errachidia').checked)
+                listeCities.push(document.getElementById('Errachidia').name);
+            if(document.getElementById('Essaouira').checked)
+                listeCities.push(document.getElementById('Essaouira').name);
+            if(document.getElementById('Fes').checked)
+                listeCities.push(document.getElementById('Fes').name);
+            if(document.getElementById('Figuig').checked)
+                listeCities.push(document.getElementById('Figuig').name);
+            if(document.getElementById('Kenitra').checked)
+                listeCities.push(document.getElementById('Kenitra').name);
+            if(document.getElementById('Khenifra').checked)
+                listeCities.push(document.getElementById('Khenifra').name);
+            if(document.getElementById('Khouribga').checked)
+                listeCities.push(document.getElementById('Khouribga').name);
+            if(document.getElementById('Laayoune').checked)
+                listeCities.push(document.getElementById('Laayoune').name);
+            if(document.getElementById('Lagouira').checked)
+                listeCities.push(document.getElementById('Lagouira').name);
+            if(document.getElementById('Marrakech').checked)
+                listeCities.push(document.getElementById('Marrakech').name);
+            if(document.getElementById('Meknes').checked)
+                listeCities.push(document.getElementById('Meknes').name);
+            if(document.getElementById('Nador').checked)
+                listeCities.push(document.getElementById('Nador').name);
+            if(document.getElementById('Ouarzazat').checked)
+                listeCities.push(document.getElementById('Ouarzazat').name);
+            if(document.getElementById('Ouajda').checked)
+                listeCities.push(document.getElementById('Ouajda').name);
+            if(document.getElementById('Rabat').checked)
+                listeCities.push(document.getElementById('Rabat').name);
+            if(document.getElementById('Safi').checked)
+                listeCities.push(document.getElementById('Safi').name);
+            if(document.getElementById('Settat').checked)
+                listeCities.push(document.getElementById('Settat').name);
+            if(document.getElementById('Tanger').checked)
+                listeCities.push(document.getElementById('Tanger').name);
+            if(document.getElementById('TanTan').checked)
+                listeCities.push(document.getElementById('TanTan').name);
+            if(document.getElementById('Taza').checked)
+                listeCities.push(document.getElementById('Taza').name);
+            if(document.getElementById('Tetouan').checked)
+                listeCities.push(document.getElementById('Tetouan').name);
+            var startCity = document.getElementById('startCity').value;
+            
+        }
+    </script>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="/"><img src="static/images/logo.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#header" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculator</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/dynamic"><span class="item-text">Dynamic Programming Solver</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="/vns"><span class="item-text">Meta-heuristique</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">Team</a>
+                </li>
+            </ul>
+            <!--span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x twitter"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span-->
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pl-5">
+                        <div class="text-container">
+                            <h1><span class="turquoise">Moroccan Traveling</span> Calculator<br>for 
+                                <span class="turquoise" id="js-rotating">Commerce</span>
+                            </h1>
+                            <p class="p-large">Find faster way to all cities that you want to visit in Morocco</p>
+                            <a class="btn-solid-lg page-scroll" href="#solver">TSP Solver</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="static/images/Map_SVG.svg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!--Start Form-->
+    <div id="solver" class="basic-4">
+        <div class="container">
+            <div class="row">
+                <script>
+                    function submit() {
+                        var a = document.getElementById("startCity").options[document.getElementById("startCity").selectedIndex].id;
+                        var input = document.getElementById(a);
+                        input.checked = true;
+                        listeCities = [];
+                        if(document.getElementById('Agadir').checked)
+                            listeCities.push(document.getElementById('Agadir').name);
+                        if(document.getElementById('AlHoceima').checked)
+                            listeCities.push(document.getElementById('AlHoceima').name);
+                        if(document.getElementById('BeniMellal').checked)
+                            listeCities.push(document.getElementById('BeniMellal').name);
+                        if(document.getElementById('Casablanca').checked)
+                            listeCities.push(document.getElementById('Casablanca').name);
+                        if(document.getElementById('Dakhla').checked)
+                            listeCities.push(document.getElementById('Dakhla').name);
+                        if(document.getElementById('ElJadida').checked)
+                            listeCities.push(document.getElementById('ElJadida').name);
+                        if(document.getElementById('Errachidia').checked)
+                            listeCities.push(document.getElementById('Errachidia').name);
+                        if(document.getElementById('Essaouira').checked)
+                            listeCities.push(document.getElementById('Essaouira').name);
+                        if(document.getElementById('Fes').checked)
+                            listeCities.push(document.getElementById('Fes').name);
+                        if(document.getElementById('Figuig').checked)
+                            listeCities.push(document.getElementById('Figuig').name);
+                        if(document.getElementById('Kenitra').checked)
+                            listeCities.push(document.getElementById('Kenitra').name);
+                        if(document.getElementById('Khenifra').checked)
+                            listeCities.push(document.getElementById('Khenifra').name);
+                        if(document.getElementById('Khouribga').checked)
+                            listeCities.push(document.getElementById('Khouribga').name);
+                        if(document.getElementById('Laayoune').checked)
+                            listeCities.push(document.getElementById('Laayoune').name);
+                        if(document.getElementById('Lagouira').checked)
+                            listeCities.push(document.getElementById('Lagouira').name);
+                        if(document.getElementById('Marrakech').checked)
+                            listeCities.push(document.getElementById('Marrakech').name);
+                        if(document.getElementById('Meknes').checked)
+                            listeCities.push(document.getElementById('Meknes').name);
+                        if(document.getElementById('Nador').checked)
+                            listeCities.push(document.getElementById('Nador').name);
+                        if(document.getElementById('Ouarzazat').checked)
+                            listeCities.push(document.getElementById('Ouarzazat').name);
+                        if(document.getElementById('Ouajda').checked)
+                            listeCities.push(document.getElementById('Ouajda').name);
+                        if(document.getElementById('Rabat').checked)
+                            listeCities.push(document.getElementById('Rabat').name);
+                        if(document.getElementById('Safi').checked)
+                            listeCities.push(document.getElementById('Safi').name);
+                        if(document.getElementById('Settat').checked)
+                            listeCities.push(document.getElementById('Settat').name);
+                        if(document.getElementById('Tanger').checked)
+                            listeCities.push(document.getElementById('Tanger').name);
+                        if(document.getElementById('TanTan').checked)
+                            listeCities.push(document.getElementById('TanTan').name);
+                        if(document.getElementById('Taza').checked)
+                            listeCities.push(document.getElementById('Taza').name);
+                        if(document.getElementById('Tetouan').checked)
+                            listeCities.push(document.getElementById('Tetouan').name);
+                        var startCity = document.getElementById('startCity').value;
+                        const form = document.createElement('form');
+
+                        form.method = "post";
+                        form.action = "/vns";
+
+                        const hiddenField = document.createElement('input');
+
+                        hiddenField.type = 'hidden';
+                        hiddenField.name = "listeCities";
+                        hiddenField.value = listeCities;
+
+                        form.appendChild(hiddenField);
+
+                        const hiddenField1 = document.createElement('input');
+
+                        hiddenField1.type = 'hidden';
+                        hiddenField1.name = "startCity";
+                        hiddenField1.value = startCity;
+
+                        form.appendChild(hiddenField1);
+                        
+                        // The form needs to be a part of the document in
+                        // order for us to be able to submit it.
+                        $(document.body).append(form);
+                        form.submit();
+                    }
+                </script>
+                <div>
+                    <h3>Find a lowest way from a file <a style="text-decoration: none;" class="btn btn-primary" href="/upload">here</a> or select cities in form below</h3>
+                </div>
+                <form class="col-sm-12">
+                    <div class="column">
+                        <h4 class="text-left pb-4">Cities that I will visit (Please select)</h4>
+                        <div class="col-sm-12 row">
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Agadir" name="0">
+                                <label class="col-sm-12" for="Agadir">Agadir</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="AlHoceima" name="1">
+                                <label class="col-sm-12" for="AlHoceima">Al Hoceima</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="BeniMellal" name="2">
+                                <label class="col-sm-12" for="BeniMellal">Beni Mellal</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Casablanca" name="3">
+                                <label class="col-sm-12" for="Casablanca">Casablanca</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Dakhla" name="4">
+                                <label class="col-sm-12" for="Dakhla">Dakhla</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="ElJadida" name="5">
+                                <label class="col-sm-12" for="ElJadida">El Jadida</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Errachidia" name="6">
+                                <label class="col-sm-12" for="Errachidia">Errachidia</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Essaouira" name="7">
+                                <label class="col-sm-12" for="Essaouira">Essaouira</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Fes" name="8">
+                                <label class="col-sm-12" for="Fes">Fes</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Figuig" name="9">
+                                <label class="col-sm-12" for="Figuig">Figuig</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Kenitra" name="10">
+                                <label class="col-sm-12" for="Kenitra">Kenitra</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Khenifra" name="11">
+                                <label class="col-sm-12" for="Khenifra">Khenifra</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Khouribga" name="12">
+                                <label class="col-sm-12" for="Khouribga">Khouribga</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Laayoune" name="13">
+                                <label class="col-sm-12" for="Laayoune">Laayoune</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Lagouira" name="14">
+                                <label class="col-sm-12" for="Lagouira">Lagouira</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Marrakech" name="15">
+                                <label class="col-sm-12" for="Marrakech">Marrakech</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Meknes" name="16">
+                                <label class="col-sm-12" for="Meknes">Meknes</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Nador" name="17">
+                                <label class="col-sm-12" for="Nador">Nador</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Ouarzazat" name="18">
+                                <label class="col-sm-12" for="Ouarzazat">Ouarzazat</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Ouajda" name="19">
+                                <label class="col-sm-12" for="Ouajda">Ouajda</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Rabat" name="20">
+                                <label class="col-sm-12" for="Rabat">Rabat</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Safi" name="21">
+                                <label class="col-sm-12" for="Safi">Safi</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Settat" name="22">
+                                <label class="col-sm-12" for="Settat">Settat</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Tanger" name="23">
+                                <label class="col-sm-12" for="Tanger">Tanger</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="TanTan" name="24">
+                                <label class="col-sm-12" for="TanTan">Tan-Tan</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Taza" name="25">
+                                <label class="col-sm-12" for="Taza">Taza</label>
+                            </p>
+                            <p class="col-sm-6 col-md-4">
+                                <input class="col-sm-12" type="checkbox" id="Tetouan" name="26">
+                                <label class="col-sm-12" for="Tetouan">Tetouan</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4 class="text-left pb-4 pr-4">I'm in </h4>
+                        <script>
+                            function selectChanged() {
+                                var a = document.getElementById("startCity").options[document.getElementById("startCity").selectedIndex].id;
+                                var input = document.getElementById(a);
+                                input.checked = true;
+                            }
+                        </script>
+                        <select id="startCity" name="startCity" onselect="selectChanged()" class="col-sm-5 form-control">
+                            <option id="Agadir" value="0">Agadir</option>
+                            <option id="AlHoceima" value="1">AlHoceima</option>
+                            <option id="BeniMellal" value="2">BeniMellal</option>
+                            <option id="Casablanca" value="3">Casablanca</option>
+                            <option id="Dakhla" value="4">Dakhla</option>
+                            <option id="ElJadida" value="5">ElJadida</option>
+                            <option id="Errachidia" value="6">Errachidia</option>
+                            <option id="Essaouira" value="7">Essaouira</option>
+                            <option id="Fes" value="8">Fes</option>
+                            <option id="Figuig" value="9">Figuig</option>
+                            <option id="Kenitra" value="10">Kenitra</option>
+                            <option id="Khenifra" value="11">Khenifra</option>
+                            <option id="Khouribga" value="12">Khouribga</option>
+                            <option id="Laayoune" value="13">Laayoune</option>
+                            <option id="Lagouira" value="14">Lagouira</option>
+                            <option id="Marrakech" value="15">Marrakech</option>
+                            <option id="Meknes" value="16">Meknes</option>
+                            <option id="Nador" value="17">Nador</option>
+                            <option id="Ouarzazat" value="18">Ouarzazat</option>
+                            <option id="Ouajda" value="19">Ouajda</option>
+                            <option id="Rabat" value="20">Rabat</option>
+                            <option id="Safi" value="21">Safi</option>
+                            <option id="Settat" value="22">Settat</option>
+                            <option id="Tanger" value="23">Tanger</option>
+                            <option id="TanTan" value="24">TanTan</option>
+                            <option id="Taza" value="25">Taza</option>
+                            <option id="Tetouan" value="26">Tetouan</option>
+                        </select>
+                    </div>
+                </form>
+                <button class="btn btn-success p-2" type="button" onclick="submit()">Find lowest way</button>
+            </div>
+        </div>
+    </div>
+    <!--End form-->
+
+    <!-- About -->
+    <div id="about" class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About The Team</h2>
+                    <p class="p-heading p-large"></p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="static/images/abdelilah.jpg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large"><strong>Sabri Abdelilah</strong></p>
+                        
+                        <!--span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span--> <!-- end of social-icons -->
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="static/images/anas.jpg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large"><strong>Azdad Anas</strong></p>
+                        
+                        <!--span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span--> <!-- end of social-icons -->
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="static/images/ibtissam.jpg" alt="alternative">
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large"><strong>Ibtissam Laghssi</strong></p>
+                        
+                        <!--span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span-->
+                        </span--> <!-- end of social-icons -->
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="static/images/zakaria.jpg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large"><strong>Alouani Zakaria</strong></p>
+                        
+                        <!--span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span--> <!-- end of social-icons -->
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of about -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="static/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="static/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="static/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="static/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="static/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="static/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="static/js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        var text = ["Tourism", "Commerce"];
+        var counter = 0;
+        var elem = document.getElementById("js-rotating");
+        var inst = setInterval(change, 2000);
+
+        function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if (counter >= text.length) {
+            counter = 0;
+            // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+    </script>
+</body>
+</html>
